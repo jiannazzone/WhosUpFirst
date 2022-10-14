@@ -1,0 +1,15 @@
+body {
+    background-color: cornflowerblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: whitesmoke;
+    filter: drop-shadow(5px 5px 2px black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row#title-row {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
