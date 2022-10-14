@@ -5,8 +5,9 @@ body {
 
 h1 {
     color: whitesmoke;
-    filter: drop-shadow(5px 5px 2px black);
+    filter: drop-shadow(5px 5px 0px black);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
 }
 
 .row#title-row {

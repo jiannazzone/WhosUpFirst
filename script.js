@@ -1,5 +1,5 @@
 (async () => {
-    const prompts = loadPrompts().then( x => {return x});
+    const prompts = loadPrompts().then( data => {return data});
     console.log(prompts); // #1
 })();
 
