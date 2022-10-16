@@ -1,4 +1,7 @@
-let selectedPrompts = [];
+let selectedPrompts = {
+    "mathy":[],
+    "funny":[]
+};
 
 function main() {
 
@@ -34,16 +37,16 @@ async function randomPrompt(category) {
     while (true) {
         const thisPrompt = thisCategoryPrompts[Math.floor(Math.random()*thisCategoryPrompts.length)];
         
-            if (!selectedPrompts.includes(thisPrompt)) {
+            if (!selectedPrompts[category].includes(thisPrompt)) {
                 // Add prompt to list of "used prompts" and display on page
                 console.log(thisPrompt);
-                selectedPrompts.push(thisPrompt);
+                selectedPrompts[category].push(thisPrompt);
                 outputElement.innerHTML = thisPrompt;
                 break;
-            } else if (selectedPrompts.length == thisCategoryPrompts.length) {
+            } else if (selectedPrompts[category].length == thisCategoryPrompts.length) {
                 // User has gone through everything!
                 console.log('User has run through all prompts. Resetting...')
-                selectedPrompts = [];
+                selectedPrompts[category] = [];
             }
         
     }
