@@ -4,7 +4,6 @@ let selectedPrompts = {
 };
 
 function main() {
-
     // Funny Button
     const funnyButton = document.getElementById('funny-button');
     funnyButton.addEventListener('click', function() {
@@ -16,7 +15,7 @@ function main() {
     mathyButton.addEventListener('click', function() {
         randomPrompt('mathy');
     });
-}
+} // main
 
 async function loadPrompts() {
     try {
@@ -26,29 +25,42 @@ async function loadPrompts() {
     } catch (error) {
         console.log(error);
     }
-}
+} // loadPrompts
 
 async function randomPrompt(category) {
+    // Disable buttons until selection is completed.
+    const allButtons = document.getElementsByClassName('random-button');
+    for (let i = 0; i < allButtons.length; i++) {
+        allButtons.disabled = true;
+    } // for
+
     const prompts = await loadPrompts().then( data => {return data});
     const thisCategoryPrompts = prompts[category];
     const outputElement = document.getElementById('output');
     
     // Ensure no repeated prompts
+    let thisPrompt;
     while (true) {
-        const thisPrompt = thisCategoryPrompts[Math.floor(Math.random()*thisCategoryPrompts.length)];
+        thisPrompt = thisCategoryPrompts[Math.floor(Math.random()*thisCategoryPrompts.length)];
+
+        if (!selectedPrompts[category].includes(thisPrompt)) {
+            // Add prompt to list of "used prompts" and display on page
+            console.log(thisPrompt);
+            selectedPrompts[category].push(thisPrompt);
+            outputElement.innerHTML = thisPrompt;
+            break;
+
+        } else if (selectedPrompts[category].length == thisCategoryPrompts.length) {
+            // User has gone through everything!
+            console.log('User has run through all prompts. Resetting...')
+            selectedPrompts[category] = [thisPrompt];
+        } // if-else-if
         
-            if (!selectedPrompts[category].includes(thisPrompt)) {
-                // Add prompt to list of "used prompts" and display on page
-                console.log(thisPrompt);
-                selectedPrompts[category].push(thisPrompt);
-                outputElement.innerHTML = thisPrompt;
-                break;
-            } else if (selectedPrompts[category].length == thisCategoryPrompts.length) {
-                // User has gone through everything!
-                console.log('User has run through all prompts. Resetting...')
-                selectedPrompts[category] = [];
-            }
-        
+    } // while-true
+
+    // Re-enable buttons
+    for (let i = 0; i < allButtons.length; i++) {
+        allButtons.disabled = false;
     }
 
-}
+} // randomPrompt
