@@ -10,7 +10,15 @@ h1 {
     font-weight: bolder;
 }
 
-.row#title-row {
-    margin-bottom: 20px;
+div#title-row {
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.button-col {
+    margin-bottom: 20px;
+}
+
+div.col#output {
+    color: whitesmoke;
 }

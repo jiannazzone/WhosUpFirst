@@ -1,8 +1,17 @@
+let selectedPrompts = [];
+
 function main() {
+
+    // Funny Button
     const funnyButton = document.getElementById('funny-button');
-    // console.log(funnyButton);
     funnyButton.addEventListener('click', function() {
         randomPrompt('funny');
+    });
+
+    // Mathy button
+    const mathyButton = document.getElementById('mathy-button');
+    mathyButton.addEventListener('click', function() {
+        randomPrompt('mathy');
     });
 }
 
@@ -19,6 +28,24 @@ async function loadPrompts() {
 async function randomPrompt(category) {
     const prompts = await loadPrompts().then( data => {return data});
     const thisCategoryPrompts = prompts[category];
-    const thisPrompt = thisCategoryPrompts[Math.floor(Math.random()*thisCategoryPrompts.length)];
-    console.log(thisPrompt);
+    const outputElement = document.getElementById('output');
+    
+    // Ensure no repeated prompts
+    while (true) {
+        const thisPrompt = thisCategoryPrompts[Math.floor(Math.random()*thisCategoryPrompts.length)];
+        
+            if (!selectedPrompts.includes(thisPrompt)) {
+                // Add prompt to list of "used prompts" and display on page
+                console.log(thisPrompt);
+                selectedPrompts.push(thisPrompt);
+                outputElement.innerHTML = thisPrompt;
+                break;
+            } else if (selectedPrompts.length == thisCategoryPrompts.length) {
+                // User has gone through everything!
+                console.log('User has run through all prompts. Resetting...')
+                selectedPrompts = [];
+            }
+        
+    }
+
 }
