@@ -46,7 +46,7 @@ div.button-col {
 .pop {
     animation-name: reveal-output;
     animation-duration: 0.2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
 }
 
 @keyframes reveal-output {
