@@ -63,6 +63,10 @@ async function randomPrompt(category) {
             selectedPrompts[category].push(thisPrompt);
             outputElement.innerHTML = thisPrompt;
 
+            setTimeout(() => {
+                outputElement.classList.add('pop');
+            }, 0);
+            
             // Add background and border-radius to div
             // outputElement.classList.add('output-active');
 
@@ -80,5 +84,6 @@ async function randomPrompt(category) {
     for (let i = 0; i < allButtons.length; i++) {
         allButtons.disabled = false;
     }
+    outputElement.classList.remove('pop');
 
 } // randomPrompt

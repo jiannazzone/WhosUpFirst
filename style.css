@@ -33,7 +33,23 @@ div.button-col {
     margin-top: -20px;
 }
 
+.pop {
+    animation-name: reveal-output;
+    animation-duration: 0.20s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes reveal-output {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .btn-custom {
+    min-width: 75%;
     --bs-btn-color: whitesmoke;
     --bs-btn-bg: #212D40;
     --bs-btn-border-color: whitesmoke;
