@@ -31,6 +31,7 @@ div#output {
     font-size: xx-large;
     text-align: center;
     text-shadow: -2px 2px 0px #11151C;
+    margin-top: -20px;
 }
 
 .btn-custom {
