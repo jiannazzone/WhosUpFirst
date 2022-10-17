@@ -9,7 +9,10 @@
 		"Who has the longest fingernails?",
 		"Who has the weirdest toe(s)?",
 		"Who can name all seven dwarves from Snow White?",
-		"Who is the best whistler?"
+		"Who is the best whistler?",
+		"Who is the thirstiest right now?",
+		"Who looks most like a pirate?",
+		"Who has heard the tale of Darth Plagueis the wise?"
 	],
 	"mathy": [
 		"One person selects a well-known product. The other players guess the price. The closest without going over plays first.",
@@ -22,7 +25,8 @@
 		"From their childhood home, who could get to Disney World (Orlando) the quickest?",
 		"How tall is Mount Everest? The closest without going over plays first.",
 		"The youngest player starts.",
-		"The oldest player starts."
+		"The oldest player starts.",
+		"What is the square root of 50? No calculators or paper!"
 	],
 	"normal": [
 		"Who has the darkest hair?",
@@ -34,6 +38,7 @@
 		"The person to your left gets to pick.",
 		"Who has the longest hair?",
 		"Who has the newest car?",
-		"Who owns this game?"
+		"Who owns this game?",
+		"Who woke up earliest today?"
 	]
 }
