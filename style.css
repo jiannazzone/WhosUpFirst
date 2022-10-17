@@ -7,37 +7,41 @@ body {
 
 h1 {
     color: whitesmoke;
-    text-shadow: -5px 5px #11151C;
-} 
+    text-shadow: -5px 5px 0px #11151C;
+}
+
+h4 {
+    color: whitesmoke;
+    text-shadow: -2px 2px 0px #11151C;
+}
 
 div.row {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 div.button-col {
     margin-bottom: 20px;
 }
 
-div#output, span#subtitle {
+div#output {
     color: whitesmoke;
-    font-size: xx-large;
+    font-size: x-large;
     text-align: center;
     text-shadow: -2px 2px 0px #11151C;
     margin-top: -20px;
 }
 
 .btn-custom {
-    color: whitesmoke;
-    background-color: #212D40;
-    border-color: whitesmoke;
-    font-size: xx-large;
+    --bs-btn-color: whitesmoke;
+    --bs-btn-bg: #212D40;
+    --bs-btn-border-color: whitesmoke;
+    --bs-btn-font-size: x-large;
+    --bs-btn-hover-color: #212D40;
+    --bs-btn-hover-bg: whitesmoke;
+    --bs-btn-hover-border-color: whitesmoke;
+    --bs-btn-focus-shadow-rgb: #11151C;
     --bs-btn-active-color: #11151C;
     --bs-btn-active-bg: whitesmoke;
     --bs-btn-active-border-color: #11151C;
-}
-
-.btn-custom:hover {
-    color: #212D40;
-    background-color: whitesmoke;
 }
