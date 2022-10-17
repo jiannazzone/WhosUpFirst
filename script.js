@@ -15,13 +15,13 @@ function main() {
         randomPrompt('funny');
     });
 
-    // Mathy button
+    // Mathy Button
     const mathyButton = document.getElementById('mathy-button');
     mathyButton.addEventListener('click', function() {
         randomPrompt('mathy');
     });
 
-    // Normal button
+    // Normal Button
     const normalButton = document.getElementById('normal-button');
     normalButton.addEventListener('click', function() {
         randomPrompt('normal');
