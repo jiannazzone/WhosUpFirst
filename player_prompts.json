@@ -7,13 +7,20 @@
 		"Who was the last person to touch a tree?",
 		"Who can touch their toes? It's probably only one of you.",
 		"Who has the strongest glasses perscription?",
-		"Who can do the wierdest thing with their tongue?"
-	],
-	"mathy": [
+		"Who can do the wierdest thing with their tongue?",
+		"Who most recently talked on the phone?",
+		"Who was the last person to eat pizza?",
 		"Who is the tallest?",
 		"Who had the most recent birthday?",
+		"Who has the longest fingernails?",
+		"Who has the wierdest toe(s)?"
+	],
+	"mathy": [
 		"One person selects a well-known product. The other players guess the price. The closest without going over plays first.",
-		"Who is wearing socks that are closest to red? If nobody is wearing read, see who is closest in ROYGBIV order.",
-		"How many people live in Cleveland, Ohio? Whoever is closest goes first."
+		"Who is wearing socks that are closest to red? If nobody is wearing red, see who is closest in ROYGBIV order.",
+		"How many people live in Cleveland, Ohio? Whoever is closest goes first.",
+		"Who has the most unread emails in their inbox?",
+		"How tall is Shaquille O'Neal? Closest without going over plays first.",
+		"Who lives at the higest elevation?"
 	]
 }

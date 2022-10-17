@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
 body {
-    background-color: cornflowerblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #364156;
+    font-family: 'Carter One', cursive;
+}
+
+h1, h3 {
+    color: whitesmoke;
 }
 
 h1 {
-    color: whitesmoke;
-    filter: drop-shadow(5px 5px 0px black);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
+    text-shadow: -5px 5px #11151C;
 }
 
-div#title-row {
+h3 {
+    text-shadow: -2px 2px 0px #11151C;
+}
+
+div.row {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -19,6 +26,24 @@ div.button-col {
     margin-bottom: 20px;
 }
 
-div.col#output {
+div#output {
     color: whitesmoke;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: -2px 2px 0px #11151C;
+}
+
+.btn-custom {
+    color: whitesmoke;
+    background-color: #212D40;
+    border-color: whitesmoke;
+    font-size: xx-large;
+    --bs-btn-active-color: #11151C;
+    --bs-btn-active-bg: whitesmoke;
+    --bs-btn-active-border-color: #11151C;
+}
+
+.btn-custom:hover {
+    color: #212D40;
+    background-color: whitesmoke;
 }

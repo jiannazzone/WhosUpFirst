@@ -3,6 +3,8 @@ let selectedPrompts = {
     "funny":[]
 };
 
+// let allPrompts = {};
+
 function main() {
     // Funny Button
     const funnyButton = document.getElementById('funny-button');
@@ -48,6 +50,10 @@ async function randomPrompt(category) {
             console.log(thisPrompt);
             selectedPrompts[category].push(thisPrompt);
             outputElement.innerHTML = thisPrompt;
+
+            // Add background and border-radius to div
+            // outputElement.classList.add('output-active');
+
             break;
 
         } else if (selectedPrompts[category].length == thisCategoryPrompts.length) {
