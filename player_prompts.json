@@ -13,7 +13,8 @@
 		"Who is the thirstiest right now?",
 		"Who looks most like a pirate?",
 		"Who has heard the tale of Darth Plagueis the wise?",
-		"Nose goes!"
+		"Nose goes!",
+		"Who has the most embarrassing date story?"
 	],
 	"mathy": [
 		"One person selects a well-known product. The other players guess the price. The closest without going over plays first.",
@@ -27,7 +28,8 @@
 		"How tall is Mount Everest? The closest without going over plays first.",
 		"The youngest player starts.",
 		"The oldest player starts.",
-		"What is the square root of 50? No calculators or paper!"
+		"What is the square root of 50? No calculators or paper!",
+		"Who is sitting on the north side of the table?"
 	],
 	"normal": [
 		"Who has the darkest hair?",
@@ -42,6 +44,8 @@
 		"Who owns this game?",
 		"Who woke up earliest today?",
 		"Who was the last person to visit NYC?",
-		"Who is wearing the most jewelry?"
+		"Who is wearing the most jewelry?",
+		"Who has the most fancy coffee equipment?",
+		"Who has the most recent photo of a dog in their camera roll?"
 	]
 }
