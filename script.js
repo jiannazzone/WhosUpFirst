@@ -2,8 +2,8 @@ let selectedPrompts = {
     "mathy":[],
     "funny":[]
 };
-
-// let allPrompts = {};
+let allPrompts = {};
+let promptsLoaded = false;
 
 function main() {
     // Funny Button
@@ -36,8 +36,11 @@ async function randomPrompt(category) {
         allButtons.disabled = true;
     } // for
 
-    const prompts = await loadPrompts().then( data => {return data});
-    const thisCategoryPrompts = prompts[category];
+    if (!promptsLoaded) {
+        allPrompts = await loadPrompts().then( data => {return data});
+        promptsLoaded = true;
+    }
+    const thisCategoryPrompts = allPrompts[category];
     const outputElement = document.getElementById('output');
     
     // Ensure no repeated prompts
