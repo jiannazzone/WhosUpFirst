@@ -1,6 +1,9 @@
+// spell-checker: disable
+
 let selectedPrompts = {
     "mathy":[],
-    "funny":[]
+    "funny":[],
+    "normal":[]
 };
 let allPrompts = {};
 let promptsLoaded = false;
@@ -16,6 +19,12 @@ function main() {
     const mathyButton = document.getElementById('mathy-button');
     mathyButton.addEventListener('click', function() {
         randomPrompt('mathy');
+    });
+
+    // Normal button
+    const normalButton = document.getElementById('normal-button');
+    normalButton.addEventListener('click', function() {
+        randomPrompt('normal');
     });
 } // main
 
