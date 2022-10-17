@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
+:root {
+    --shadow-size: 6px;
+}
+
 body {
     background-color: #364156;
     font-family: 'Carter One', cursive;
@@ -8,7 +12,13 @@ body {
 
 h1 {
     color: whitesmoke;
-    text-shadow: -5px 5px 0px #11151C;
+    text-shadow:
+        -2px 2px 0px #D66853,
+        -4px 4px 0px #7D4E57,
+        -6px 6px 0px #11151C;
+    animation-name: grow-shadow;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in;
 }
 
 h4 {
@@ -26,7 +36,7 @@ div.button-col {
 }
 
 #output-row {
-    color: whitesmoke;
+    color: #D66853;
     font-size: x-large;
     text-align: center;
     text-shadow: -2px 2px 0px #11151C;
@@ -35,16 +45,34 @@ div.button-col {
 
 .pop {
     animation-name: reveal-output;
-    animation-duration: 0.20s;
+    animation-duration: 0.2s;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes reveal-output {
-    50% {
-        transform: scale(1.1);
+    from {
+        text-shadow: 0px 0px 0px #11151C;
     }
-    100% {
-        transform: scale(1);
+    to {
+        text-shadow: -2px 2px 0px #11151C;
+    }
+}
+
+@keyframes grow-shadow {
+    from {
+        /* transform: translate(-100px 5px); */
+        text-shadow:
+            0px 0px 0px #D66853,
+            0px 0px 0px #7D4E57,
+            0px 0px 0px #11151C;
+    }
+
+    to {
+        /* transform: translate(0px 0px); */
+        text-shadow:
+            -2px 2px 0px #D66853,
+            -4px 4px 0px #7D4E57,
+            -6px 6px 0px #11151C;
     }
 }
 
@@ -55,10 +83,10 @@ div.button-col {
     --bs-btn-border-color: whitesmoke;
     --bs-btn-font-size: x-large;
     --bs-btn-hover-color: #212D40;
-    --bs-btn-hover-bg: whitesmoke;
-    --bs-btn-hover-border-color: whitesmoke;
+    --bs-btn-hover-bg: #D66853;
+    --bs-btn-hover-border-color: #7D4E57;
     --bs-btn-focus-shadow-rgb: #11151C;
-    --bs-btn-active-color: #11151C;
-    --bs-btn-active-bg: whitesmoke;
-    --bs-btn-active-border-color: #11151C;
+    --bs-btn-active-color: #7D4E57;
+    --bs-btn-active-bg: #D66853;
+    --bs-btn-active-border-color: #7D4E57;
 }
