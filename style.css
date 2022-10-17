@@ -5,7 +5,7 @@ body {
     font-family: 'Carter One', cursive;
 }
 
-h1, h3 {
+h1, h2 {
     color: whitesmoke;
 }
 
@@ -13,7 +13,7 @@ h1 {
     text-shadow: -5px 5px #11151C;
 }
 
-h3 {
+h2 {
     text-shadow: -2px 2px 0px #11151C;
 }
 
