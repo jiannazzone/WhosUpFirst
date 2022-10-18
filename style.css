@@ -26,6 +26,10 @@ h4 {
     text-shadow: -2px 2px 0px #11151C;
 }
 
+i.bi {
+    padding: 0px 4px 0px 4px;
+}
+
 div.row {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -78,10 +82,13 @@ div.button-col {
 
 .btn-custom {
     min-width: 75%;
+    --bs-btn-font-size: x-large;
+}
+
+.btn {
     --bs-btn-color: whitesmoke;
     --bs-btn-bg: #212D40;
     --bs-btn-border-color: whitesmoke;
-    --bs-btn-font-size: x-large;
     --bs-btn-hover-color: #212D40;
     --bs-btn-hover-bg: #D66853;
     --bs-btn-hover-border-color: #7D4E57;
