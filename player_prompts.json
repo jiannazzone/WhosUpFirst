@@ -14,7 +14,10 @@
 		"Who looks most like a pirate?",
 		"Who has heard the tale of Darth Plagueis the wise?",
 		"Nose goes!",
-		"Who has the most embarrassing date story?"
+		"Who has the most embarrassing date story?",
+		"Whose name is the closest to Mark?",
+		"Who can do the best Chewbacca impression?",
+		"Who can fit the most of their hand in their mouth? Make sure to wash your hands!"
 	],
 	"mathy": [
 		"One person selects a well-known product. The other players guess the price. The closest without going over plays first.",
@@ -29,7 +32,10 @@
 		"The youngest player starts.",
 		"The oldest player starts.",
 		"What is the square root of 50? No calculators or paper!",
-		"Who is sitting on the north side of the table?"
+		"Who is sitting on the north side of the table?",
+		"Solve for x: 17 = 3x + 2",
+		"What is the 3rd most populous metropolitan area in the US?",
+		"On average, how many hairs are in human eyelashes?"
 	],
 	"normal": [
 		"Who has the darkest hair?",
@@ -46,6 +52,8 @@
 		"Who was the last person to visit NYC?",
 		"Who is wearing the most jewelry?",
 		"Who has the most fancy coffee equipment?",
-		"Who has the most recent photo of a dog in their camera roll?"
+		"Who has the most recent photo of a dog in their camera roll?",
+		"Who is wearing a hat? If more than one person is wearing a hat, who has the largest hat?",
+		"Who has the longest last name? If there is a tie, who has the longest full name (first, middle, last)?"
 	]
 }
