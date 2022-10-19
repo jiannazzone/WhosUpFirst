@@ -62,14 +62,6 @@ async function randomPrompt(category) {
             console.log(thisPrompt);
             selectedPrompts[category].push(thisPrompt);
             outputElement.innerHTML = thisPrompt;
-
-            setTimeout(() => {
-                outputElement.classList.add('pop');
-            }, 0);
-            
-            // Add background and border-radius to div
-            // outputElement.classList.add('output-active');
-
             break;
 
         } else if (selectedPrompts[category].length == thisCategoryPrompts.length) {
@@ -84,6 +76,4 @@ async function randomPrompt(category) {
     for (let i = 0; i < allButtons.length; i++) {
         allButtons.disabled = false;
     }
-    outputElement.classList.remove('pop');
-
 } // randomPrompt
