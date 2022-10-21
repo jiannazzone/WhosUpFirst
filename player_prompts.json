@@ -36,7 +36,8 @@
 		"Who is sitting on the north side of the table?",
 		"Solve for x: 17 = 3x + 2",
 		"What is the 3rd most populous metropolitan area in the US?",
-		"On average, how many hairs are in human eyelashes?"
+		"On average, how many hairs are in human eyelashes?",
+		"How much does the average adult male blue whale weigh? Closest goes first."
 	],
 	"normal": [
 		"Who has the darkest hair?",
@@ -55,6 +56,10 @@
 		"Who has the most fancy coffee equipment?",
 		"Who has the most recent photo of a dog in their camera roll?",
 		"Who is wearing a hat? If more than one person is wearing a hat, who has the largest hat?",
-		"Who has the longest last name? If there is a tie, who has the longest full name (first, middle, last)?"
+		"Who has the longest last name? If there is a tie, who has the longest full name (first, middle, last)?",
+		"Who was the lsat person to leave the state?",
+		"Whose eyes are the lightest in color?",
+		"Whose eyes are the darkest in color?",
+		"Who has the most freckles on their face?"
 	]
 }
