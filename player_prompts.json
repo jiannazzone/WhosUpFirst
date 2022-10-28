@@ -18,7 +18,9 @@
 		"Whose name is the closest to Mark?",
 		"Who can do the best Chewbacca impression?",
 		"Who can fit the most of their hand in their mouth? Make sure to wash your hands!",
-		"Give us your best witch cackle."
+		"Give us your best witch cackle.",
+		"Who has the most liquid in their drinking vessel right now?",
+		"Go around the table. Each person names one Taylor Swift song. The first person who can't name one or repeats a previously name song is out. Last person standing goes first."
 	],
 	"mathy": [
 		"One person selects a well-known product. The other players guess the price. The closest without going over plays first.",
@@ -37,7 +39,8 @@
 		"Solve for x: 17 = 3x + 2",
 		"What is the 3rd most populous metropolitan area in the US?",
 		"On average, how many hairs are in human eyelashes?",
-		"How much does the average adult male blue whale weigh? Closest goes first."
+		"How much does the average adult male blue whale weigh? Closest goes first.",
+		"Calculate the volume of a sphere with a radius of 10."
 	],
 	"normal": [
 		"Who has the darkest hair?",
