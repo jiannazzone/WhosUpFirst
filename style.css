@@ -8,6 +8,7 @@
 body {
     background-color: #364156;
     font-family: 'Carter One', cursive;
+    min-height: 100vh;
 }
 
 h1 {
